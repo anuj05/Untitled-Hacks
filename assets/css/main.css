@@ -174,7 +174,7 @@ html {
 }
 
 body {
-    background: #18060ad7;
+    background: #0b0305dc;
     background-image: url("images/bg02.png");
 }
 
@@ -197,7 +197,7 @@ textarea,
 select {
     font-family: 'Source Sans Pro';
     font-weight: 500;
-    color: #ab2f2f;
+    color: #ffffff;
     font-size: 14pt;
     line-height: 1.75em;
 }
@@ -2344,7 +2344,7 @@ ul.social li a.fa-google-plus:hover {
     display: inline-block;
     background: #2C2929;
     background: rgba(255, 255, 255, 0.05);
-    border-radius: 5px;
+    border-radius: 20px;
     margin: 0;
     padding: 0.85em 2.25em 0.85em 2.25em;
 }
