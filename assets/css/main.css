@@ -89,7 +89,8 @@ mark,
 audio,
 video {
     margin: 0;
-    padding: 0;
+    padding: 30;
+    text-align: center;
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -135,6 +136,8 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
@@ -189,6 +192,11 @@ body.is-preload *:after {
     -webkit-transition: none !important;
     -ms-transition: none !important;
     transition: none !important;
+}
+
+p {
+    color: #831c1c;
+    font-weight: 500;
 }
 
 body,
@@ -2069,7 +2077,7 @@ ul.social li a.fa-google-plus:hover {
 #header {
     position: relative;
     background: #fef4ec;
-    border-bottom: solid 1px #ccc;
+    border-bottom: solid 1px rgb(156, 126, 126);
     padding: 2em 0 4em 0;
     text-align: center;
 }
@@ -2273,6 +2281,12 @@ ul.social li a.fa-google-plus:hover {
     background-size: 100% 100%;
     z-index: 0;
     opacity: 0.1;
+}
+.grow {
+    transition: all 0.2s ease-in-out;
+    filter: drop-shadow(3px 3px 3px #222);
+    margin-left: auto;
+    margin-right: auto;
 }
 .grow:hover {
     transform: scale(1.1);
@@ -2751,6 +2765,10 @@ ul.social li a.fa-google-plus:hover {
         margin: 0 0 1em 0;
     }
     
+    #prize-table {
+        display: block;
+    }
+    
     .box.post h2 {
         font-size: 1.5em;
         line-height: 1.5em;
@@ -2888,4 +2906,35 @@ ul.social li a.fa-google-plus:hover {
     .visible-small {
         display: block;
     }
+}
+
+/* For frmae css */
+.frame {
+    display: inline-block;
+    vertical-align: top;
+    margin: 12px;
+    position: relative;
+    z-index: 1;
+    width: 342px;
+    height: 452px;
+    border: 1.6px solid rgb(253, 253, 253);
+    border-top-color: rgb(204, 194, 194);
+    border-radius: 3px;
+    background-color: #ca6b0d45;
+    padding: 18px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .15);
+    &:after {
+        position: absolute;
+        z-index: 10;
+        left: 18px;
+        top: 18px;
+        content: "";
+        width: 320px;
+        height: 240px;
+        box-shadow: inset 1px 0 3px 2px rgba(0, 0, 0, .4);
+    }
+}
+.frame img {
+    border: 1px solid #f2f0ee;
+    background: #00000000;
 }
